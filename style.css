@@ -1,0 +1,421 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    /* font-family: Lato, Sans-serif; */
+    /* fuente */
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+    padding: 0 !important;
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+li {
+    line-height: 1.5rem;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-top: 0;
+    margin-bottom: .5rem;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.75rem;
+}
+
+h4 {
+    font-size: 1.5rem;
+}
+
+h5 {
+    font-size: 1.25rem;
+}
+
+h6 {
+    font-size: 1rem;
+}
+
+.fs-14 {
+    font-size: 14px;
+}
+
+.flex {
+    display: flex;
+}
+
+.w-auto {
+    width: auto !important;
+}
+
+.margin-x-auto {
+    margin-right: auto !important;
+    margin-left: auto !important;
+}
+
+/* .margin-y {}
+
+.margin-y {}
+
+.margin-y {}
+
+.padding-y {}
+
+.padding-y {}
+
+.padding-y {}
+
+.padding-y {} */
+
+/* HEADER */
+header {
+    background-color: #fff;
+    color: #fff;
+}
+
+.header-top {
+    background-color: #1C1F48;
+    padding: 1rem 0;
+    font-weight: bold;
+    padding-right: 1.5rem !important;
+    padding-left: 1.5rem !important;
+}
+
+.header-top-content {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 100%;
+    padding: 0 1rem;
+}
+
+.header-content-1 {
+    width: 50% !important;
+    display: flex !important;
+    justify-content: space-between !important;
+}
+
+.header-content-2 {
+    width: 50%;
+    justify-content: end;
+    width: auto !important;
+}
+
+.contacto-ubi {
+    display: none;
+}
+
+.cita-button {
+    padding: 1rem 1.5rem;
+    background-color: #04CF9C;
+    border-radius: 6px;
+    width: auto !important;
+}
+
+.header-bottom {
+    padding: 1rem 1.5rem;
+}
+
+.img-logo {
+    width: 180px;
+    height: auto;
+}
+
+/* MAIN */
+.hero-bg {
+    background-color: #F0EFF4;
+}
+
+.hero {
+    padding: 4rem 1rem 0rem 1rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.hero-title {
+    font-size: 2.5em;
+    font-weight: 700;
+    color: #1E293B;
+    text-align: center;
+    padding-bottom: 2rem;
+}
+
+.hero-content {
+    margin-top: 10px;
+    margin-bottom: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.hero-icon {
+    /* padding: .5rem 0; */
+}
+
+.hero-paragraph {
+    text-align: center;
+    padding: 1rem .5rem;
+    width: auto;
+    line-height: 2rem;
+}
+
+.hero-button {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.servicios-button {
+    background-color: #04CF9C;
+    border-radius: .4rem;
+    color: #F0EFF4;
+    padding: .5rem 1.5rem;
+    margin: 1.5rem .5rem;
+    font-weight: 700;
+}
+
+.contacto-button {
+    border: #04CF9C 1px solid;
+    border-radius: .4rem;
+    color: #1C1F48;
+    padding: .5rem 1.5rem;
+    margin: 1.5rem .5rem;
+    font-weight: 700;
+}
+
+.hero-der {
+    height: 30rem;
+    margin-top: 2rem;
+}
+
+.hero-img {
+    height: 100%;
+}
+
+.bg-blue {
+    background-color: #1C1F48;
+}
+
+.text-white {
+    color: #fff;
+}
+
+.text-gris {
+    color: #e8e8e8;
+}
+
+.marcas {
+    width: 75%;
+    margin: 0 auto;
+    padding: 1rem;
+    text-align: center;
+    border-radius: 1rem;
+}
+
+.marcas-text {
+    padding: .5rem 0;
+}
+
+.bg-marcas {
+    margin: 0.5rem 0;
+    background-color: #fff;
+    border-radius: 1rem;
+}
+
+.bg-marcas div {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 0;
+}
+
+.bg-marcas img {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* FOOTER */
+footer {
+    background-color: #1C1F48;
+    color: #fff;
+    padding: 4rem 0;
+}
+
+.footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 100%;
+    padding: 0 1.5rem;
+}
+
+.column-footer {
+    padding: 2rem;
+    width: 100%;
+}
+
+.redes-footer {
+    display: flex;
+    align-items: center;
+}
+
+.bg-green {
+    background-color: #04CF9C;
+    border-radius: 8px;
+    padding: 6px;
+    margin: 1rem 0.5rem !important;
+}
+
+.bg-green img {
+    height: auto;
+    width: 25px;
+}
+
+.linea {
+    margin: 1rem 0;
+    opacity: .50;
+    border: 0;
+    border-top: 1px solid;
+    width: 100% !important;
+    padding: .5rem !important;
+}
+
+/* MEDIA QUERYS */
+@media screen and (max-width: 393px) {
+    .phone {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 415px) {}
+
+@media only screen and (max-width: 768px) {}
+
+@media screen and (min-width: 768px) {
+    .header-top.header-bottom {
+        padding-right: 0 !important;
+        padding-left: 0 !important;
+    }
+
+    .header-top-content {
+        justify-content: space-between;
+    }
+
+    .hero-content {
+        margin-top: 10px;
+        margin-bottom: 0;
+        padding: 0 70px 30px 0;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .hero-icon {
+        width: 50%;
+        text-align: center;
+    }
+
+    .hero-icon img {
+        width: 5.5rem;
+    }
+
+    .hero-paragraph {
+        text-align: start;
+        width: 50%;
+    }
+
+    .bg-marcas div {
+        flex-direction: row;
+    }
+
+    .bg-marcas img {
+        width: 30%;
+    }
+
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {}
+
+@media screen and (min-width: 992px) {
+    .container {
+        width: 1320px;
+        margin: 0 auto;
+    }
+
+    .header-top-content {
+        padding: 0 1.5rem;
+    }
+
+    .header-content-1 {
+        padding: 0 1rem;
+    }
+
+    .header-content-2 {
+        padding: 0 1rem;
+    }
+
+    .contacto-ubi {
+        display: block;
+    }
+
+    .hero {
+        align-items: center;
+    }
+
+    .hero-izq {
+        width: 50%;
+    }
+
+    .hero-der {
+        width: 50%;
+    }
+
+    .hero-title {
+        font-size: 3rem;
+        line-height: 4rem;
+    }
+
+    .footer .column-footer {
+        width: 33%;
+    }
+}
