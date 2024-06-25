@@ -533,7 +533,73 @@ header {
     font-weight: 600;
 }
 
+.sat {
+    margin: 3.5rem 0;
+}
 
+.sat h3 {
+    font-weight: 700;
+    text-align: center;
+}
+
+.sat-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 3rem;
+    margin-top: 4rem;
+}
+
+.sat-div {
+    background-color: #F0EFF4;
+    border-radius: 1rem;
+    width: 100%;
+    padding: 1.2rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sat-div div {
+    background-color: #fff;
+    border-radius: 1rem;
+    padding: .5rem .2rem;
+    margin-top: -2.5rem;
+}
+
+.sat-div img {
+    width: 70%;
+}
+
+.sat-div h6 {
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin: 1rem 0;
+}
+
+.text-blue {
+    color: #1C1F48;
+}
+
+.sat-div .text-blue {
+    font-weight: 700;
+    margin-top: 1rem;
+}
+
+.preguntas-garantia {
+    background-image: url('./img/Servicio-tecnico-aire-acondicionado.webp');
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #fff;
+    /* background-size: cover; */
+}
+
+.bg-blue-opacity {
+    height: 10rem;
+    background-color: #1c1f48cc;
+}
 
 /* FOOTER */
 footer {
@@ -707,6 +773,14 @@ footer {
 
     .reparaciones-div {
         padding: 2rem 5rem;
+    }
+
+    .sat h3 {
+        margin: 0 8rem;
+    }
+
+    .sat-div {
+        width: 30%;
     }
 
     .footer .column-footer {
