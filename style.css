@@ -295,19 +295,19 @@ header {
     justify-content: center;
     align-items: center;
     max-width: 767px;
-    margin: 2rem;
+    margin: 1rem;
 }
 
 .mosaico-1 {
     width: 50%;
-    padding: .2rem;
+    padding: .4rem;
 }
 
 .mosaico-1 img {
     height: auto;
     max-width: 100%;
     border: none;
-    border-radius: 20px 20px 20px 20px;
+    border-radius: 20px;
 }
 
 .mosaico-2 {
@@ -320,14 +320,14 @@ header {
 }
 
 .mosaico-2 div {
-    padding: .2rem;
+    padding: .4rem;
 }
 
 .mosaico-2 img {
     height: auto;
     max-width: 100%;
     border: none;
-    border-radius: 20px 20px 20px 20px;
+    border-radius: 20px;
 }
 
 .expertos-content {
