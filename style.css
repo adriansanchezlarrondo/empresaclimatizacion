@@ -178,10 +178,6 @@ header {
     justify-content: center;
 }
 
-/* .hero-icon {
-    padding: .5rem 0;
-} */
-
 .hero-paragraph {
     text-align: center;
     padding: 1rem .5rem;
@@ -557,6 +553,7 @@ header {
 
 .sat-div img {
     width: 70%;
+    filter: brightness(0) saturate(100%) invert(74%) sepia(63%) saturate(4557%) hue-rotate(121deg) brightness(98%) contrast(97%);
 }
 
 .sat-div h6 {
@@ -624,6 +621,7 @@ header {
     width: 40px;
     height: 40px;
     padding: 2px;
+    filter: invert(100%);
 }
 
 .proceso-servicio-text {
@@ -853,6 +851,11 @@ footer {
 @media only screen and (max-width: 768px) {}
 
 @media screen and (min-width: 768px) {
+    .container {
+        width: 768px;
+        margin: 0 auto;
+    }
+
     .header-top.header-bottom {
         padding-right: 0 !important;
         padding-left: 0 !important;
@@ -862,10 +865,28 @@ footer {
         justify-content: space-between;
     }
 
+    .hero {
+        align-items: center;
+    }
+
+    .hero-izq {
+        width: 50%;
+    }
+
+    .hero-der {
+        width: 50%;
+    }
+
+    .hero-title {
+        font-size: 3rem;
+        line-height: 4rem;
+        text-align: start;
+        padding-bottom: 0;
+    }
+
     .hero-content {
         margin-top: 10px;
         margin-bottom: 0;
-        padding: 0 70px 30px 0;
         display: flex;
         flex-wrap: wrap;
         align-items: center;
@@ -873,17 +894,17 @@ footer {
     }
 
     .hero-icon {
-        width: 50%;
+        width: 20%;
         text-align: center;
     }
 
     .hero-icon img {
-        width: 5.5rem;
+        width: 4rem;
     }
 
     .hero-paragraph {
         text-align: start;
-        width: 50%;
+        width: 80%;
     }
 
     .bg-marcas div {
@@ -913,7 +934,19 @@ footer {
     }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1024px) {}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .hero-content {
+        padding: 0 !important;
+    }
+
+    .hero-icon img {
+        padding-right: .5rem;
+    }
+
+    .hero-paragraph {
+        padding-left: 1.5rem;
+    }
+}
 
 @media screen and (min-width: 992px) {
     .container {
@@ -949,10 +982,15 @@ footer {
         width: 50%;
     }
 
+    .hero-content {
+        padding: 0 70px 30px 0;
+    }
+
     .hero-title {
         font-size: 3.5rem;
-        line-height: 4rem;
+        line-height: 5rem;
         text-align: start;
+        padding-bottom: 0;
     }
 
     .reparaciones-urgentes {
