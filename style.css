@@ -588,17 +588,133 @@ header {
     margin-top: 1rem;
 }
 
-.preguntas-garantia {
+.preguntas-servicio {
     background-image: url('./img/Servicio-tecnico-aire-acondicionado.webp');
     background-position: center;
     background-repeat: no-repeat;
+    background-size: cover;
     color: #fff;
-    /* background-size: cover; */
 }
 
 .bg-blue-opacity {
-    height: 10rem;
-    background-color: #1c1f48cc;
+    background-color: rgba(28, 31, 72, 0.85);
+    padding: 5rem 1.5rem;
+    text-align: center;
+}
+
+.servicio {}
+
+.servicio-text {
+    padding: 2rem 0;
+    line-height: 1.5rem;
+}
+
+.proceso-servicio {
+    padding-top: 2rem;
+    text-align: start;
+}
+
+.proceso-servicio-tecnico {
+    padding: 1rem 0;
+}
+
+.proceso-servicio-desplazamiento {
+    padding: 1rem 0;
+}
+
+.proceso-servicio-diagnostico {
+    padding: 1rem 0;
+}
+
+.proceso-servicio-icono {
+    background-color: #04CF9C;
+    padding: .5rem;
+    width: fit-content;
+    height: fit-content;
+    border-radius: 1rem;
+}
+
+.proceso-servicio-icono img {
+    width: 40px;
+    height: 40px;
+    padding: 2px;
+}
+
+.proceso-servicio-text {
+    padding-left: 1.5rem;
+    line-height: 1.5rem;
+}
+
+.proceso-servicio-text h6 {
+    font-size: 1.2rem;
+}
+
+.preguntas {
+    background-color: #fff;
+    border-radius: 2rem;
+    color: #1E293B;
+    margin-top: 3rem;
+    padding: 2rem 1rem 3rem;
+}
+
+.preguntas-title {
+    padding-bottom: 1.5rem;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.accordion {
+    width: 100%;
+    text-align: start;
+    margin: auto;
+    border: 1px solid #ccc;
+    overflow: hidden;
+}
+
+.accordion-item {
+    border-bottom: 1px solid #ccc;
+}
+
+.accordion-item:last-child {
+    border-bottom: none;
+}
+
+.accordion-header {
+    background-color: #fff;
+    padding: 1rem .5rem;
+    cursor: pointer;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.accordion-content {
+    display: none;
+    padding: 15px;
+    font-size: 14px;
+    background-color: #fff;
+}
+
+.accordion-header:after {
+    content: '▼';
+    transition: transform 0.3s ease;
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+input[type="checkbox"]:checked~.accordion-content {
+    display: block;
+}
+
+input[type="checkbox"]:checked+.accordion-header:after {
+    transform: rotate(180deg);
+}
+
+input[type="checkbox"]:checked+.accordion-header {
+    background-color: #fff;
 }
 
 /* FOOTER */
