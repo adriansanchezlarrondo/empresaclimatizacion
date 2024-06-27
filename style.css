@@ -267,6 +267,7 @@ header {
     margin: 4rem 0;
     display: flex;
     flex-wrap: wrap;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
@@ -310,10 +311,6 @@ header {
     max-width: 100%;
     border: none;
     border-radius: 20px;
-}
-
-.expertos-content {
-    /* width: 50%; tamaño pantalla grande */
 }
 
 .expertos-content h2 {
@@ -407,10 +404,10 @@ header {
 }
 
 .averias span {
+    color: #fff;
     width: auto;
     background-color: #04CF9C;
     padding: .4rem;
-    color: #F0EFF4;
 }
 
 .reparaciones-2 {
@@ -497,7 +494,7 @@ header {
 
 .dias-bg-icono img {
     background-color: #fcfcfc;
-    box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.5);
+    box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.35);
     padding: .8rem;
     border-radius: 1rem;
 }
@@ -540,7 +537,7 @@ header {
     text-align: center;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -584,8 +581,6 @@ header {
     padding: 5rem 1.5rem;
     text-align: center;
 }
-
-.servicio {}
 
 .servicio-text {
     padding: 2rem 0;
@@ -915,13 +910,70 @@ footer {
         width: 30%;
     }
 
+    .expertos {
+        flex-direction: row;
+        gap: 1rem;
+    }
+
+    .mosaico {
+        width: 48%;
+        margin: 0;
+    }
+
+    .expertos-content {
+        width: 48%;
+    }
+
+    .expertos-content h2 {
+        text-align: start;
+    }
+
+    .expertos-content p {
+        text-align: start;
+    }
+
+    .averias span {
+        font-size: 16px;
+        padding: .6rem;
+    }
+
     .reparaciones-wrap {
         flex-direction: row;
     }
 
     .reparaciones-div {
         width: 33.3333%;
-        padding: 2rem;
+        padding: 2rem 1rem;
+    }
+
+    .dias {
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+
+    .sat-wrap {
+        gap: 2rem;
+    }
+
+    .sat-div {
+        width: 30%;
+    }
+
+    .proceso-servicio-icono img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .preguntas-servicio-wrap p {
+        font-size: 16px;
+    }
+
+    .accordion-header {
+        font-size: 1.1rem;
+    }
+
+    .padding-x {
+        padding: 0 1.5rem;
     }
 
     .footer {
@@ -935,6 +987,12 @@ footer {
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .hero {
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+        padding-bottom: 1.5rem;
+    }
+
     .hero-content {
         padding: 0 !important;
     }
@@ -946,6 +1004,28 @@ footer {
     .hero-paragraph {
         padding-left: 1.5rem;
     }
+
+    .hero-img {
+        margin-top: 1.5rem;
+    }
+
+    .dias-bg-icono {
+        margin: 1rem;
+        padding-right: .5rem;
+    }
+
+    .dias-bg-icono img {
+        padding: .8rem;
+    }
+
+    .bg-blue-opacity {
+        padding: 5rem 3.5rem;
+    }
+
+    .servicio h3 {
+        font-size: 2rem;
+    }
+
 }
 
 @media screen and (min-width: 992px) {
@@ -993,6 +1073,15 @@ footer {
         padding-bottom: 0;
     }
 
+    .mosaico {
+        margin-right: 2rem;
+    }
+
+    .mosaico-1 {
+        display: flex;
+        justify-content: end;
+    }
+
     .reparaciones-urgentes {
         flex-direction: row;
     }
@@ -1001,20 +1090,52 @@ footer {
         width: 35%;
     }
 
+    .reparaciones-1 h2 {
+        text-align: start;
+    }
+
+    .reparaciones-1 p {
+        text-align: start;
+    }
+
     .reparaciones-2 {
         width: 60%;
     }
 
-    .reparaciones-div {
-        padding: 2rem 5rem;
+    .dias-bg-icono img {
+        padding: 1rem;
+        border-radius: 1.5rem;
     }
 
     .sat h3 {
         margin: 0 8rem;
     }
 
-    .sat-div {
-        width: 30%;
+    .bg-blue-opacity {
+        padding: 8rem 10rem;
+    }
+
+    .preguntas-servicio-wrap {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2rem;
+    }
+
+    .servicio {
+        width: 48%;
+        text-align: start;
+    }
+
+    .servicio h3 {
+        font-size: 3rem;
+    }
+
+    .proceso-servicio {
+        padding-top: 0;
+    }
+
+    .preguntas {
+        width: 48%;
     }
 
     .footer .column-footer {
