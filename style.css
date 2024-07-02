@@ -119,7 +119,7 @@ header {
 }
 
 .header-content-1 {
-    width: 50% !important;
+    width: 50%;
     display: flex !important;
     justify-content: space-between !important;
 }
@@ -131,7 +131,17 @@ header {
 }
 
 .contacto-ubi {
-    display: none;
+    display: none !important;
+}
+
+.phone {
+    display: flex;
+}
+
+.header-flex img {
+    width: 20px;
+    margin-inline: 10px;
+    filter: brightness(0) saturate(100%) invert(74%) sepia(63%) saturate(4557%) hue-rotate(121deg) brightness(98%) contrast(97%);
 }
 
 .cita-button {
@@ -1049,10 +1059,19 @@ footer {
 
     .header-content-1 {
         padding: 0 1rem;
+        width: 60%;
     }
 
     .header-content-2 {
         padding: 0 1rem;
+        width: 40%;
+    }
+
+    .header-flex {
+        display: flex !important;
+        align-items: center;
+        gap: .5rem;
+
     }
 
     .contacto-ubi {
